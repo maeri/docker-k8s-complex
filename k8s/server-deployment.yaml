@@ -23,6 +23,7 @@ spec:
           image: maeri/docker-k8s-complex-server
           ports:
             - containerPort: 5000
+              name: http
           env:
             - name: REDIS_HOST
               value : redis-cluster-ip-service

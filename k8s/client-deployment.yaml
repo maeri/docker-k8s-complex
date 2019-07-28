@@ -17,3 +17,4 @@ spec:
         image: maeri/docker-k8s-complex-client        
         ports:
         - containerPort: 3000
+          name: http

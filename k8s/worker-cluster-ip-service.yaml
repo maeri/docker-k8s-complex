@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis-cluster-ip-service
+  name: worker-cluster-ip-service
 spec:
   type: ClusterIP
   selector:
-    component: redis
+    component: worker
   ports:
     # external port -> from outside of pod
-  - port: 6379
+  - port: 1111
     # internal port -> inside of pod
-    targetPort: 6379
+    targetPort: 1111
     name: http

@@ -8,4 +8,5 @@ spec:
     component: web
   ports:
     - port: 3000
+      name: http
       targetPort: 3000
