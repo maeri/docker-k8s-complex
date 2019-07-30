@@ -1,3 +1,2 @@
 # docker-k8s-complex
-
-Local kubernetes 
+Local kubernetes fully running on Istio

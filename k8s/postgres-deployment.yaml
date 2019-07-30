@@ -27,7 +27,7 @@ spec:
                   key: PGPASSWORD
           ports:
             - containerPort: 5432
-              name: mysql-postgres
+              name: tcp
           volumeMounts:
             - name: postgres-storage
               mountPath: /var/lib/postgresql/data

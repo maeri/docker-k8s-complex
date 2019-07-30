@@ -15,6 +15,9 @@ spec:
       containers:
         - name: worker
           image: maeri/docker-k8s-complex-worker
+          ports:
+            - containerPort: 1111
+              name: redis
           env:
             - name: REDIS_HOST
               value : redis-cluster-ip-service

@@ -11,4 +11,4 @@ spec:
   - port: 6379
     # internal port -> inside of pod
     targetPort: 6379
-    name: http
+    name: redis
